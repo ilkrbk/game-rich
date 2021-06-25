@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul, ol{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #101926;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin-bottom: 0;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.app{
+    background: darkolivegreen;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.app__game-field{
+    display: flex;
+    height: 40%;
+    justify-content: space-between;
+}
+
+.app__wrap-icons, .app__wrap-buttons{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.player-icon{
+    width: 75px;
+    height: 75px;
+    border: solid 1px #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.app__button-new-game, .app__button-step-game, .app__button-trash-game{
+    width: 75px;
+    height: 75px;
+    border: solid 1px #fff;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.app__list-field{
+    border: solid 4px #fff;
+    border-radius: 20px;
+    height: 70%;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+.app__list{
+    display: flex;
+    overflow: scroll;
+    align-items: center;
+    border: solid 4px #fff;
+    border-radius: 20px;
+    height: 30%;
+    padding: 10px;
+}
+
+.app__item{
+    display: flex;
+    margin-right: 10px;
+    height: 100%;
+}
+
+.item-field{
+    display: flex;
+    margin-right: 10px;
+    height: 100%;
+}
+
+.app__item-img{
+    height: 100%;
+}
+
+.card--active{
+    border: solid 5px yellow;
+}
+
+.second-player-cards{
+    position: relative;
+}
+
+.second-player-cards::after{
+    background-image: url(image/rubashka.png);
+    content: '';
+    position: absolute;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
